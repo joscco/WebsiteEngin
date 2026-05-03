@@ -6,6 +6,13 @@
   html {
     scroll-behavior: smooth;
     background-color: #0f172a; /* slate-900 – matches hero top & footer bottom */
+    overflow-x: clip; /* prevent horizontal scrollbar from overflow on narrow viewports */
+  }
+
+  body {
+    overflow-wrap: break-word;   /* wrap long words before they overflow */
+    hyphens: auto;               /* auto-hyphenate (respects lang="de" / lang="en") */
+    -webkit-hyphens: auto;
   }
 }
 
