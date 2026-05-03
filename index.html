@@ -86,14 +86,24 @@
         EA <span class="text-blue-400">Controlling</span>
       </a>
       <div class="hidden md:flex items-center gap-8">
-        <a href="#ueber-mich" class="nav-link">Über mich</a>
-        <a href="#leistungen" class="nav-link">Leistungen</a>
-        <a href="#expertise" class="nav-link">Expertise</a>
-        <a href="#kontakt" class="nav-link">Kontakt</a>
+        <a href="#ueber-mich" class="nav-link" data-i18n="nav.about">Über mich</a>
+        <a href="#leistungen" class="nav-link" data-i18n="nav.services">Leistungen</a>
+        <a href="#expertise" class="nav-link" data-i18n="nav.expertise">Expertise</a>
+        <a href="#kontakt" class="nav-link" data-i18n="nav.contact">Kontakt</a>
       </div>
-      <a href="mailto:engin0471@googlemail.com" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors duration-200">
-        Jetzt anfragen
-      </a>
+      <div class="flex items-center gap-3">
+        <!-- Language Toggle -->
+        <button id="lang-toggle"
+                aria-label="Switch to English"
+                class="flex items-center gap-1.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 text-xs font-bold px-3 py-2 rounded-lg transition-colors duration-200">
+          <span data-role="active-lang" class="text-white">DE</span>
+          <span class="text-slate-600">|</span>
+          <span data-role="other-lang" class="text-slate-400">EN</span>
+        </button>
+        <a href="mailto:engin0471@googlemail.com" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors duration-200" data-i18n="nav.cta">
+          Jetzt anfragen
+        </a>
+      </div>
     </div>
   </nav>
 
@@ -103,42 +113,42 @@
       <div>
         <div class="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 text-blue-300 text-sm font-medium px-4 py-2 rounded-full mb-6">
           <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse" aria-hidden="true"></span>
-          Verfügbar für neue Projekte
+          <span data-i18n="hero.badge">Verfügbar für neue Projekte</span>
         </div>
         <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
           Engin<br>
           <span class="text-blue-400">Aydogan</span>
         </h1>
-        <p class="text-xl text-blue-200 font-medium mb-4">Freelance Controller</p>
-        <p class="text-slate-300 text-lg leading-relaxed mb-10 max-w-lg">
+        <p class="text-xl text-blue-200 font-medium mb-4" data-i18n="hero.role">Freelance Controller</p>
+        <p class="text-slate-300 text-lg leading-relaxed mb-10 max-w-lg" data-i18n="hero.description">
           Ich bringe Klarheit in Ihre Zahlen. Mit fundierter Expertise im Controlling unterstütze ich mittelständische Unternehmen und Start-ups bei datengetriebenen Entscheidungen und nachhaltigem Wachstum.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="#leistungen" class="btn-primary">Meine Leistungen</a>
-          <a href="mailto:engin0471@googlemail.com" class="btn-outline">Projekt besprechen</a>
+          <a href="#leistungen" class="btn-primary" data-i18n="hero.btnServices">Meine Leistungen</a>
+          <a href="mailto:engin0471@googlemail.com" class="btn-outline" data-i18n="hero.btnContact">Projekt besprechen</a>
         </div>
       </div>
       <div class="hidden md:flex justify-center items-center">
         <div class="relative">
           <div class="w-72 h-72 rounded-full bg-gradient-to-br from-blue-500 to-blue-800 flex items-center justify-center shadow-2xl shadow-blue-500/30">
-            <img src="img/engin.jpeg" class="rounded-full" />
+            <img src="img/engin.jpeg" class="rounded-full"  alt="Profile photo"/>
           </div>
-          <div class="absolute -top-8 -right-8 bg-white rounded-2xl shadow-lg p-4 flex items-center gap-3">
+          <div class="absolute -top-8 -right-20 bg-white rounded-2xl shadow-lg p-4 flex items-center gap-3">
             <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
               <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
             </div>
             <div>
-              <p class="text-xs text-slate-500">Budget-Effizienz</p>
-              <p class="font-bold text-slate-800">Messbar ↑</p>
+              <p class="text-xs text-slate-500" data-i18n="hero.efficiency">Budget-Effizienz</p>
+              <p class="font-bold text-slate-800" data-i18n="hero.efficiencyValue">Messbar ↑</p>
             </div>
           </div>
-          <div class="absolute -bottom-8 -left-8 bg-white rounded-2xl shadow-lg p-4 flex items-center gap-3">
+          <div class="absolute -bottom-8 -left-20 bg-white rounded-2xl shadow-lg p-4 flex items-center gap-3">
             <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
               <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
             </div>
             <div>
-              <p class="text-xs text-slate-500">Kostentransparenz</p>
-              <p class="font-bold text-slate-800">100%</p>
+              <p class="text-xs text-slate-500" data-i18n="hero.transparency">Kostentransparenz</p>
+              <p class="font-bold text-slate-800" data-i18n="hero.transparencyValue">100%</p>
             </div>
           </div>
         </div>
@@ -151,12 +161,12 @@
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <p class="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-3">Über mich</p>
-          <h2 class="section-title">Zahlen, die<br>Entscheidungen treffen</h2>
-          <p class="text-slate-600 leading-relaxed mb-6">
+          <p class="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-3" data-i18n="about.label">Über mich</p>
+          <h2 class="section-title" data-i18n="about.title">Zahlen, die<br>Entscheidungen treffen</h2>
+          <p class="text-slate-600 leading-relaxed mb-6" data-i18n="about.p1">
             Als Freelance Controller bringe ich praxiserprobte Erfahrung aus verschiedenen Unternehmen und Branchen mit. Mein Fokus liegt auf der Verbindung von analytischer Präzision und unternehmerischem Denken.
           </p>
-          <p class="text-slate-600 leading-relaxed mb-8">
+          <p class="text-slate-600 leading-relaxed mb-8" data-i18n="about.p2">
             Ob Budgetplanung, Forecasting oder Kostenoptimierung – ich entwickle maßgeschneiderte Controlling-Lösungen, die Ihr Unternehmen messbar voranbringen. Ich spreche nicht nur Zahlen, sondern auch die Sprache Ihres Business.
           </p>
           <div class="grid grid-cols-2 gap-4">
@@ -164,33 +174,32 @@
               <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
               </div>
-              <span class="text-slate-700 font-medium">Strategisches Controlling</span>
+              <span class="text-slate-700 font-medium" data-i18n="about.feat1">Strategisches Controlling</span>
             </div>
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
               </div>
-              <span class="text-slate-700 font-medium">Operatives Controlling</span>
+              <span class="text-slate-700 font-medium" data-i18n="about.feat2">Operatives Controlling</span>
             </div>
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
               </div>
-              <span class="text-slate-700 font-medium">Reporting & Dashboards</span>
+              <span class="text-slate-700 font-medium" data-i18n="about.feat3">Reporting & Dashboards</span>
             </div>
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
               </div>
-              <span class="text-slate-700 font-medium">Prozessoptimierung</span>
+              <span class="text-slate-700 font-medium" data-i18n="about.feat4">Prozessoptimierung</span>
             </div>
           </div>
-
           <div class="mt-8">
             <a href="https://www.linkedin.com/in/engin-aydogan-359213199/" target="_blank" rel="noopener noreferrer"
                class="inline-flex items-center gap-3 bg-[#0A66C2] hover:bg-[#004182] text-white font-semibold px-6 py-3 rounded-xl transition-colors duration-200">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              Profil auf LinkedIn ansehen
+              <span data-i18n="about.linkedinBtn">Profil auf LinkedIn ansehen</span>
             </a>
           </div>
         </div>
@@ -201,19 +210,21 @@
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
               </div>
               <div>
-                <p class="font-bold text-slate-800">Fundierte fachliche Qualifikation</p>
-                <p class="text-sm text-slate-500">Controlling · Finanzen · Analyse</p>
+                <p class="font-bold text-slate-800" data-i18n="about.cardTitle">Fundierte fachliche Qualifikation</p>
+                <p class="text-sm text-slate-500" data-i18n="about.cardSub">Controlling · Finanzen · Analyse</p>
               </div>
             </div>
-            <p class="text-slate-600 text-sm">Praxisnah, methodisch und stets auf dem neuesten Stand der Controlling-Methoden und -Tools.</p>
+            <p class="text-slate-600 text-sm" data-i18n="about.cardText">Praxisnah, methodisch und stets auf dem neuesten Stand der Controlling-Methoden und -Tools.</p>
           </div>
           <div class="bg-blue-600 rounded-2xl p-6 text-white">
-            <p class="text-2xl font-extrabold mb-1">Remote<br>& vor Ort</p>
-            <p class="text-blue-200 text-sm mt-2">Flexibler Einsatz deutschlandweit</p>
+            <p class="text-2xl font-extrabold mb-1 whitespace-pre-line" data-i18n="about.tile1Title">Remote
+& vor Ort</p>
+            <p class="text-blue-200 text-sm mt-2" data-i18n="about.tile1Sub">Flexibler Einsatz deutschlandweit</p>
           </div>
           <div class="bg-slate-800 rounded-2xl p-6 text-white">
-            <p class="text-2xl font-extrabold mb-1">Mittelstand<br>& Start-ups</p>
-            <p class="text-slate-400 text-sm mt-2">Erfahrung aus verschiedenen Branchen</p>
+            <p class="text-2xl font-extrabold mb-1 whitespace-pre-line" data-i18n="about.tile2Title">Mittelstand
+& Start-ups</p>
+            <p class="text-slate-400 text-sm mt-2" data-i18n="about.tile2Sub">Erfahrung aus verschiedenen Branchen</p>
           </div>
         </div>
       </div>
@@ -224,9 +235,9 @@
   <section id="leistungen" class="py-24 bg-white" aria-label="Leistungen">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <p class="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-3">Leistungen</p>
-        <h2 class="section-title text-center">Was ich für Sie tue</h2>
-        <p class="section-subtitle mx-auto">Maßgeschneiderte Controlling-Lösungen für Ihr Unternehmen – flexibel, remote oder vor Ort.</p>
+        <p class="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-3" data-i18n="services.label">Leistungen</p>
+        <h2 class="section-title text-center" data-i18n="services.title">Was ich für Sie tue</h2>
+        <p class="section-subtitle mx-auto" data-i18n="services.subtitle">Maßgeschneiderte Controlling-Lösungen für Ihr Unternehmen – flexibel, remote oder vor Ort.</p>
       </div>
       <div class="grid md:grid-cols-3 gap-6">
 
@@ -234,48 +245,48 @@
           <div class="w-14 h-14 bg-blue-50 group-hover:bg-blue-600 rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300">
             <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-800 mb-3">Budgetplanung & Forecasting</h3>
-          <p class="text-slate-500 leading-relaxed">Strukturierte Budgetprozesse und präzise Forecasts, die Ihnen helfen, Ressourcen optimal einzusetzen und finanzielle Risiken frühzeitig zu erkennen.</p>
+          <h3 class="text-xl font-bold text-slate-800 mb-3" data-i18n="services.s1title">Budgetplanung & Forecasting</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="services.s1text">Strukturierte Budgetprozesse und präzise Forecasts, die Ihnen helfen, Ressourcen optimal einzusetzen und finanzielle Risiken frühzeitig zu erkennen.</p>
         </div>
 
         <div class="card group">
           <div class="w-14 h-14 bg-blue-50 group-hover:bg-blue-600 rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300">
             <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-800 mb-3">Reporting & Dashboards</h3>
-          <p class="text-slate-500 leading-relaxed">Aussagekräftige Management-Reports und interaktive Dashboards, die Entscheidungsträger mit den richtigen Informationen zur richtigen Zeit versorgen.</p>
+          <h3 class="text-xl font-bold text-slate-800 mb-3" data-i18n="services.s2title">Reporting & Dashboards</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="services.s2text">Aussagekräftige Management-Reports und interaktive Dashboards, die Entscheidungsträger mit den richtigen Informationen zur richtigen Zeit versorgen.</p>
         </div>
 
         <div class="card group">
           <div class="w-14 h-14 bg-blue-50 group-hover:bg-blue-600 rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300">
             <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-800 mb-3">Kostenanalyse & -optimierung</h3>
-          <p class="text-slate-500 leading-relaxed">Tiefgehende Kostenstrukturanalysen und gezielte Optimierungsmaßnahmen, die Ihre Margen verbessern und Einsparpotenziale aufdecken.</p>
+          <h3 class="text-xl font-bold text-slate-800 mb-3" data-i18n="services.s3title">Kostenanalyse & -optimierung</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="services.s3text">Tiefgehende Kostenstrukturanalysen und gezielte Optimierungsmaßnahmen, die Ihre Margen verbessern und Einsparpotenziale aufdecken.</p>
         </div>
 
         <div class="card group">
           <div class="w-14 h-14 bg-blue-50 group-hover:bg-blue-600 rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300">
             <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-800 mb-3">Strategisches Controlling</h3>
-          <p class="text-slate-500 leading-relaxed">Verzahnung von Strategie und operativem Geschäft durch KPI-Systeme, Balanced Scorecards und strategische Planung für nachhaltiges Wachstum.</p>
+          <h3 class="text-xl font-bold text-slate-800 mb-3" data-i18n="services.s4title">Strategisches Controlling</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="services.s4text">Verzahnung von Strategie und operativem Geschäft durch KPI-Systeme, Balanced Scorecards und strategische Planung für nachhaltiges Wachstum.</p>
         </div>
 
         <div class="card group">
           <div class="w-14 h-14 bg-blue-50 group-hover:bg-blue-600 rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300">
             <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-800 mb-3">Prozessoptimierung</h3>
-          <p class="text-slate-500 leading-relaxed">Analyse und Neugestaltung von Controlling-Prozessen für mehr Effizienz, Automatisierung und Transparenz in Ihrer Finanzorganisation.</p>
+          <h3 class="text-xl font-bold text-slate-800 mb-3" data-i18n="services.s5title">Prozessoptimierung</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="services.s5text">Analyse und Neugestaltung von Controlling-Prozessen für mehr Effizienz, Automatisierung und Transparenz in Ihrer Finanzorganisation.</p>
         </div>
 
         <div class="card group">
           <div class="w-14 h-14 bg-blue-50 group-hover:bg-blue-600 rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300">
             <svg class="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-800 mb-3">Interims-Controlling</h3>
-          <p class="text-slate-500 leading-relaxed">Flexibler Einsatz als Interim Controller – ich überbrücke Vakanzen, begleite Transformationsprojekte und schaffe sofort einsatzbereite Strukturen.</p>
+          <h3 class="text-xl font-bold text-slate-800 mb-3" data-i18n="services.s6title">Interims-Controlling</h3>
+          <p class="text-slate-500 leading-relaxed" data-i18n="services.s6text">Flexibler Einsatz als Interim Controller – ich überbrücke Vakanzen, begleite Transformationsprojekte und schaffe sofort einsatzbereite Strukturen.</p>
         </div>
 
       </div>
@@ -286,13 +297,13 @@
   <section id="expertise" class="py-24 bg-slate-50" aria-label="Expertise und Tools">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <p class="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-3">Tools & Expertise</p>
-        <h2 class="section-title text-center">Womit ich arbeite</h2>
-        <p class="section-subtitle mx-auto">Fundiertes Know-how mit den führenden Controlling- und Analysetools.</p>
+        <p class="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-3" data-i18n="expertise.label">Tools & Expertise</p>
+        <h2 class="section-title text-center" data-i18n="expertise.title">Womit ich arbeite</h2>
+        <p class="section-subtitle mx-auto" data-i18n="expertise.subtitle">Fundiertes Know-how mit den führenden Controlling- und Analysetools.</p>
       </div>
       <div class="grid md:grid-cols-2 gap-8">
         <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
-          <h3 class="text-lg font-bold text-slate-800 mb-6">Software & Tools</h3>
+          <h3 class="text-lg font-bold text-slate-800 mb-6" data-i18n="expertise.softTitle">Software & Tools</h3>
           <div class="space-y-4">
             <div>
               <div class="flex justify-between mb-1.5">
@@ -325,7 +336,7 @@
           </div>
         </div>
         <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
-          <h3 class="text-lg font-bold text-slate-800 mb-6">Methoden & Branchen</h3>
+          <h3 class="text-lg font-bold text-slate-800 mb-6" data-i18n="expertise.methTitle">Methoden & Branchen</h3>
           <div class="flex flex-wrap gap-3">
             <span class="bg-blue-50 text-blue-700 font-medium px-4 py-2 rounded-xl text-sm">Plan-Ist-Analyse</span>
             <span class="bg-blue-50 text-blue-700 font-medium px-4 py-2 rounded-xl text-sm">Deckungsbeitragsrechnung</span>
@@ -348,9 +359,9 @@
   <!-- ======== CTA BANNER ======== -->
   <section class="py-20 bg-gradient-to-r from-blue-700 to-blue-600" aria-label="Kontaktaufforderung">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Bereit, Ihr Controlling auf das nächste Level zu heben?</h2>
-      <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Lassen Sie uns in einem unverbindlichen Erstgespräch herausfinden, wie ich Ihr Unternehmen unterstützen kann.</p>
-      <a href="mailto:engin0471@googlemail.com" class="bg-white text-blue-700 hover:bg-blue-50 font-bold px-10 py-4 rounded-xl transition-colors duration-200 inline-block shadow-lg">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4" data-i18n="cta.title">Bereit, Ihr Controlling auf das nächste Level zu heben?</h2>
+      <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto" data-i18n="cta.subtitle">Lassen Sie uns in einem unverbindlichen Erstgespräch herausfinden, wie ich Ihr Unternehmen unterstützen kann.</p>
+      <a href="mailto:engin0471@googlemail.com" class="bg-white text-blue-700 hover:bg-blue-50 font-bold px-10 py-4 rounded-xl transition-colors duration-200 inline-block shadow-lg" data-i18n="cta.btn">
         Kostenloses Erstgespräch vereinbaren
       </a>
     </div>
@@ -360,12 +371,11 @@
   <section id="kontakt" class="py-24 bg-white" aria-label="Kontakt">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <p class="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-3">Kontakt</p>
-        <h2 class="section-title text-center">Lassen Sie uns sprechen</h2>
-        <p class="section-subtitle mx-auto">Ich freue mich auf Ihre Anfrage und melde mich schnellstmöglich bei Ihnen.</p>
+        <p class="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-3" data-i18n="contact.label">Kontakt</p>
+        <h2 class="section-title text-center" data-i18n="contact.title">Lassen Sie uns sprechen</h2>
+        <p class="section-subtitle mx-auto" data-i18n="contact.subtitle">Ich freue mich auf Ihre Anfrage und melde mich schnellstmöglich bei Ihnen.</p>
       </div>
       <div class="max-w-2xl mx-auto">
-        <!-- Contact Cards -->
         <div class="grid sm:grid-cols-2 gap-5 mb-8">
           <a href="mailto:engin0471@googlemail.com"
              class="group flex items-center gap-4 bg-slate-50 hover:bg-blue-50 border border-slate-100 hover:border-blue-200 rounded-2xl p-6 transition-all duration-200">
@@ -373,7 +383,7 @@
               <svg class="w-6 h-6 text-blue-600 group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             </div>
             <div>
-              <p class="font-semibold text-slate-800 mb-0.5">E-Mail schreiben</p>
+              <p class="font-semibold text-slate-800 mb-0.5" data-i18n="contact.emailCard">E-Mail schreiben</p>
               <p class="text-blue-600 text-sm font-medium">engin0471@googlemail.com</p>
             </div>
           </a>
@@ -395,20 +405,20 @@
           <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Direkt in Kontakt treten</h3>
-          <p class="text-slate-300 mb-8 max-w-md mx-auto">Schreiben Sie mir einfach eine E-Mail – ich melde mich zeitnah und wir besprechen gemeinsam, wie ich Sie unterstützen kann.</p>
-          <a href="mailto:engin0471@googlemail.com?subject=Anfrage%3A%20Freelance%20Controlling&body=Hallo%20Engin%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Controlling-Dienstleistungen%20und%20w%C3%BCrde%20gerne%20mehr%20erfahren.%0A%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen"
+          <h3 class="text-2xl font-bold text-white mb-3" data-i18n="contact.ctaTitle">Direkt in Kontakt treten</h3>
+          <p class="text-slate-300 mb-8 max-w-md mx-auto" data-i18n="contact.ctaText">Schreiben Sie mir einfach eine E-Mail – ich melde mich zeitnah und wir besprechen gemeinsam, wie ich Sie unterstützen kann.</p>
+          <a id="mail-cta"
+             href="mailto:engin0471@googlemail.com?subject=Anfrage%3A%20Freelance%20Controlling&body=Hallo%20Engin%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Controlling-Dienstleistungen%20und%20w%C3%BCrde%20gerne%20mehr%20erfahren.%0A%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen"
              class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl transition-colors duration-200 text-lg">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             engin0471@googlemail.com
           </a>
-          <p class="text-slate-500 text-sm mt-4">Klick öffnet Ihr E-Mail-Programm mit vorausgefülltem Betreff</p>
+          <p class="text-slate-500 text-sm mt-4" data-i18n="contact.ctaHint">Klick öffnet Ihr E-Mail-Programm mit vorausgefülltem Betreff</p>
         </div>
 
-        <!-- Location info -->
         <div class="flex items-center justify-center gap-3 mt-8 text-slate-500">
           <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          <span>Deutschland – Remote & vor Ort nach Absprache</span>
+          <span data-i18n="contact.location">Deutschland – Remote & vor Ort nach Absprache</span>
         </div>
       </div>
     </div>
@@ -418,10 +428,10 @@
   <footer class="bg-slate-900 py-10">
     <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-white font-bold text-lg">EA <span class="text-blue-400">Controlling</span></p>
-      <p class="text-slate-500 text-sm">© 2025 Engin Aydogan. Alle Rechte vorbehalten.</p>
+      <p class="text-slate-500 text-sm" data-i18n="footer.copy">© 2025 Engin Aydogan. Alle Rechte vorbehalten.</p>
       <div class="flex gap-6">
-        <a href="#" class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Impressum</a>
-        <a href="#" class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Datenschutz</a>
+        <a href="#" class="text-slate-500 hover:text-slate-300 text-sm transition-colors" data-i18n="footer.imprint">Impressum</a>
+        <a href="#" class="text-slate-500 hover:text-slate-300 text-sm transition-colors" data-i18n="footer.privacy">Datenschutz</a>
       </div>
     </div>
   </footer>
